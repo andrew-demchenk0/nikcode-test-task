@@ -5,7 +5,7 @@ import MainMenu from './menu/MainMenu.tsx';
 
 const Header: React.FC = () => {
 	return (
-		<header className='fixed flex items-center w-full h-20 bg-sky-100 '>
+		<header className='fixed z-50 flex items-center w-full h-20 bg-sky-100 '>
 			<div className='container mx-auto w-full h-12 flex items-center justify-between'>
 				<div className='flex items-center gap-10'>
 					<NavLink
