@@ -4,7 +4,7 @@ import {Link, NavLink} from 'react-router-dom';
 
 const Footer: React.FC = () => {
 	return (
-		<footer className='flex flex-wrap items-center w-full h-32 bg-sky-100'>
+		<footer className='flex flex-wrap items-center w-full h-32 bg-sky-100 mt-14'>
 			<div className='container mx-auto w-full flex items-center justify-between gap-5'>
 				<NavLink
 					to='/'

@@ -4,7 +4,7 @@ const API_URL = 'http://deayloop.backend.test.starway.agency:8002/api';
 
 const fetchAllOffers = async () => {
 	try {
-		const response = await axios.get(`${API_URL}/offers/all/?format=api`);
+		const response = await axios.get(`${API_URL}/offers/all/`);
 		console.log('res', response)
 		console.log('data', response.data)
 		return response.data;
@@ -13,5 +13,4 @@ const fetchAllOffers = async () => {
 		return null;
 	}
 };
-
 export default fetchAllOffers;
