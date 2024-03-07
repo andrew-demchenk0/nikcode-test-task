@@ -22,7 +22,7 @@ const MainMenu: React.FC = () => {
 				All Categories
 			</button>
 			{isMenuOpen && (
-				<div className='absolute top-full left-0 w-full h-full bg-white items-start justify-start flex-col px-4 py-2'>
+				<div className='absolute top-full left-0 w-full h-48 bg-white items-start justify-start flex-col px-4 py-2'>
 					<div className='flex-col w-80 relative'>
 						{categories.map((category: Category, index: number) => (
 							<div

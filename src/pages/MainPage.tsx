@@ -1,5 +1,11 @@
+import MainCategories from '../components/mainCategories/MainCategories.tsx';
+
 const MainPage = () => {
-	return <div></div>;
+	return (
+		<>
+			<MainCategories />
+		</>
+	);
 };
 
 export default MainPage;

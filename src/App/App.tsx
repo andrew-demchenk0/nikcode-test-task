@@ -9,7 +9,7 @@ const App: React.FC = () => {
 		<Router>
 			<div className='app flex flex-col min-h-screen'>
 				<Header />
-				<main className=' mt-20 flex-grow overflow-auto'>
+				<main className='container mx-auto mt-20 flex-grow overflow-auto'>
 					<Suspense fallback={<div>Loading...</div>}>
 						<Routes>
 							<Route path='/' element={<MainPage />} />
