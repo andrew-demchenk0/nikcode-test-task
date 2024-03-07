@@ -1,5 +1,5 @@
 import {CategoriesIcons} from '../../helper/categoriesIconHelper.ts';
-import {MainCategory} from './types/mainCategories.types.ts';
+import {MainCategory} from './mainCategories.types.ts';
 
 export const mainCategories: MainCategory[] = [
 	{

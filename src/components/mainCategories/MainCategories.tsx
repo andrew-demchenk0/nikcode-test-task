@@ -1,6 +1,6 @@
 import React from 'react';
 import {mainCategories} from './mainCategories.ts';
-import {MainCategory} from './types/mainCategories.types.ts';
+import {MainCategory} from './mainCategories.types.ts';
 import {NavLink} from 'react-router-dom';
 
 const MainCategories: React.FC = () => {
@@ -9,7 +9,7 @@ const MainCategories: React.FC = () => {
 			<h2 className='flex items-center justify-center text-2xl mt-14'>
 				Main Categories
 			</h2>
-			<div className='flex flex-wrap items-center justify-between mt-7'>
+			<div className='flex flex-wrap gap-2 items-center justify-between mt-7'>
 				{mainCategories.map((mainCategory: MainCategory, index: number) => (
 					<NavLink
 						key={index}

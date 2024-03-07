@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {categories} from './categories.ts';
-import {Category, Subcategory} from './types/categories.types.ts';
+import {Category, Subcategory} from './categories.types.ts';
 
 import {Icons} from '../../helper/iconsHelper.ts';
 import {MenuIcons} from '../../helper/menuIconHelper.ts';
