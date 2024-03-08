@@ -1,6 +1,7 @@
 import React from 'react';
-import {Icons} from '../helpers/iconsHelper.ts';
 import {NavLink} from 'react-router-dom';
+
+import {Icons} from 'helpers/iconsHelper.ts';
 import MainMenu from './menu/MainMenu.tsx';
 
 const Header: React.FC = () => {

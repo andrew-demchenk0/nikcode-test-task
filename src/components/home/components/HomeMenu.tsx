@@ -1,7 +1,8 @@
 import React from 'react';
-import HelenPhoto from '../../../assets/helenPhoto.jpeg';
 import {NavLink} from 'react-router-dom';
-import {Icons} from '../../../helpers/iconsHelper.ts';
+
+import {Icons} from 'helpers/iconsHelper.ts';
+import HelenPhoto from 'assets/helenPhoto.jpeg';
 
 const HomeMenu: React.FC = () => {
 	return (

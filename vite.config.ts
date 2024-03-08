@@ -6,14 +6,15 @@ export default defineConfig({
 	plugins: [react()],
 	resolve: {
 		alias: {
-			public: 'public',
-			App: 'src/App',
-			components: 'src/components',
-			helpers: 'src/helpers',
-			assets: 'src/assets',
-			pages: 'src/pages',
-			styles: 'src/styles',
-			services: 'src/services',
+			App: '/src/App',
+			assets: '/src/assets',
+			components: '/src/components',
+			helpers: '/src/helpers',
+			pages: '/src/pages',
+			reduxSlice: '/src/reduxSlice',
+			services: '/src/services',
+			styles: '/src/styles',
+			utils: '/src/utils',
 		},
 	},
 });

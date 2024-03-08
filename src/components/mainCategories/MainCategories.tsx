@@ -1,7 +1,8 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
+
 import {mainCategories} from './mainCategories.ts';
 import {MainCategory} from './mainCategories.types.ts';
-import {NavLink} from 'react-router-dom';
 
 const MainCategories: React.FC = () => {
 	return (

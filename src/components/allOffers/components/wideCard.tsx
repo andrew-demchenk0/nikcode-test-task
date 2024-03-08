@@ -1,11 +1,13 @@
 import React, {useEffect, useState} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
+
+import Spinner from 'components/Spinner.tsx';
+
+import {fetchOffers, selectOffers} from 'reduxSlice/offersSlice.ts';
 import {NavLink} from 'react-router-dom';
-import {fetchOffers, selectOffers} from '../../../redux/offersSlice.ts';
-import {Icons} from '../../../helpers/iconsHelper.ts';
-import {Banners} from '../../../helpers/bannersHelper.ts';
-import {Offer} from '../../../services/types/offer.types.ts';
-import Spinner from '../../Spinner.tsx';
+import {Icons} from 'helpers/iconsHelper.ts';
+import {Banners} from 'helpers/bannersHelper.ts';
+import {Offer} from 'services/offer.types.ts';
 
 const WideCard: React.FC = () => {
 	const dispatch = useDispatch();

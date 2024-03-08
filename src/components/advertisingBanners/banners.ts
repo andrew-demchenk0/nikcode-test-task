@@ -1,4 +1,4 @@
-import {Banners} from '../../helpers/bannersHelper.ts';
+import {Banners} from 'helpers/bannersHelper.ts';
 import {Banner} from './bunners.types.ts';
 
 export const banners: Banner[] = [

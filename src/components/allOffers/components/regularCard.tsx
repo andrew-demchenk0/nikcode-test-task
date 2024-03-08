@@ -1,11 +1,13 @@
 import React, {useEffect, useState} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {NavLink} from 'react-router-dom';
-import {fetchOffers, selectOffers} from '../../../redux/offersSlice';
-import {Icons} from '../../../helpers/iconsHelper';
-import {Banners} from '../../../helpers/bannersHelper';
-import {Offer} from '../../../services/types/offer.types';
-import Spinner from '../../Spinner';
+
+import Spinner from 'components/Spinner.tsx';
+
+import {fetchOffers, selectOffers} from 'reduxSlice/offersSlice';
+import {Icons} from 'helpers/iconsHelper';
+import {Banners} from 'helpers/bannersHelper';
+import {Offer} from 'services/offer.types.ts';
 
 const RegularCard: React.FC = () => {
 	const dispatch = useDispatch();

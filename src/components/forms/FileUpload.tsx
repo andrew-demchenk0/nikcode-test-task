@@ -1,5 +1,6 @@
 import React from 'react';
-import {Icons} from '../../helpers/iconsHelper.ts';
+
+import {Icons} from 'helpers/iconsHelper.ts';
 
 const FileUpload: React.FC<{ field: any; form: any }> = ({ field, form }) => {
 	const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {

@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import offersReducer from '../redux/offersSlice.ts';
+import offersReducer from 'reduxSlice/offersSlice.ts';
 
 const store = configureStore({
 	reducer: {

@@ -1,11 +1,12 @@
 import React, {lazy, Suspense} from 'react';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import Header from '../components/Header.tsx';
-import Footer from '../components/Footer.tsx';
-import MainPage from '../pages/MainPage.tsx';
-import Spinner from '../components/Spinner.tsx';
 
-const HomePage = lazy(() => import('../pages/HomePage.tsx'));
+import Header from 'components/Header.tsx';
+import Footer from 'components/Footer.tsx';
+import MainPage from 'pages/MainPage.tsx';
+import Spinner from 'components/Spinner.tsx';
+
+const HomePage = lazy(() => import('pages/HomePage.tsx'));
 
 const App: React.FC = () => {
 	return (

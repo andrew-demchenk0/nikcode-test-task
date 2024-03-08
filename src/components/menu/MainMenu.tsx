@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
+import {NavLink} from 'react-router-dom';
+
 import {categories} from './categories.ts';
 import {Category, Subcategory} from './categories.types.ts';
-
-import {Icons} from '../../helpers/iconsHelper.ts';
-import {MenuIcons} from '../../helpers/menuIconHelper.ts';
-import {NavLink} from 'react-router-dom';
+import {Icons} from 'helpers/iconsHelper.ts';
+import {MenuIcons} from 'helpers/menuIconHelper.ts';
 
 const MainMenu: React.FC = () => {
 	const [activeCategory, setActiveCategory] = useState<string | null>(null);

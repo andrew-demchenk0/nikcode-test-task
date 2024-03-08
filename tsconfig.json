@@ -7,14 +7,15 @@
     "skipLibCheck": true,
     "baseUrl": "src",
     "paths": {
-      "public/*": ["public/*"],
       "App/*": ["App/*"],
+      "assets/*": ["assets/*"],
       "components/*": ["components/*"],
       "helper/*": ["helper/*"],
-      "assets/*": ["assets/*"],
       "pages/*": ["pages/*"],
+      "reduxSlice/*": ["reduxSlice/*"],
+      "services/*": ["services/*"],
       "styles/*": ["styles/*"],
-      "services/*": ["services/*"]
+      "utils/*": ["utils/*"]
     },
 
     /* Bundler mode */

@@ -1,7 +1,8 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
-import { RootState } from '../App/store';
-import {Offer} from '../services/types/offer.types.ts';
+
+import { RootState } from 'App/store';
+import {Offer} from 'services/offer.types.ts';
 
 export const fetchOffers = createAsyncThunk('offers/fetchOffers', async () => {
 	const response = await axios.get(

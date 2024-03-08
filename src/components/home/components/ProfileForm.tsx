@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
-import { Formik, Field, Form, ErrorMessage } from 'formik';
 import axios from 'axios';
-import {FormValues} from '../../forms/formValues.types.ts';
-import {validate} from '../../forms/validation.ts';
-import FileUpload from '../../forms/FileUpload.tsx';
+import { Formik, Field, Form, ErrorMessage } from 'formik';
+
+import {FormValues} from 'components/forms/formValues.types.ts';
+import {validate} from 'components/forms/validation.ts';
+
+import FileUpload from 'components/forms/FileUpload.tsx';
 
 
 const ProfileForm: React.FC = () => {
