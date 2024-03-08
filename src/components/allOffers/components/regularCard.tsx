@@ -24,6 +24,10 @@ const RegularCard: React.FC = () => {
 		return <Spinner />;
 	}
 
+	if (offers.length === 0) {
+		return <p>There are no offers available or an error occurred</p>;
+	}
+
 	return (
 		<>
 			{offers.map((offer: Offer) => (
