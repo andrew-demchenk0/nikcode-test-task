@@ -1,4 +1,4 @@
-import {MenuIcons} from '../../helper/menuIconHelper.ts';
+import {MenuIcons} from '../../helpers/menuIconHelper.ts';
 import {Category} from './categories.types.ts';
 
 export const categories: Category[] = [

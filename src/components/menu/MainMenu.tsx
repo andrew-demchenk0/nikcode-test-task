@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 import {categories} from './categories.ts';
 import {Category, Subcategory} from './categories.types.ts';
 
-import {Icons} from '../../helper/iconsHelper.ts';
-import {MenuIcons} from '../../helper/menuIconHelper.ts';
+import {Icons} from '../../helpers/iconsHelper.ts';
+import {MenuIcons} from '../../helpers/menuIconHelper.ts';
 import {NavLink} from 'react-router-dom';
 
 const MainMenu: React.FC = () => {

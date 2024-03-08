@@ -1,5 +1,5 @@
 import React from 'react';
-import {Icons} from '../helper/iconsHelper.ts';
+import {Icons} from '../helpers/iconsHelper.ts';
 import {Link, NavLink} from 'react-router-dom';
 
 const Footer: React.FC = () => {

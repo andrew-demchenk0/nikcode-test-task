@@ -1,21 +1,31 @@
-import {createSlice, createAsyncThunk} from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
-import {RootState} from '../App/store.ts';
+import { RootState } from '../App/store';
+import {Offer} from '../services/types/offer.types.ts';
 
 export const fetchOffers = createAsyncThunk('offers/fetchOffers', async () => {
 	const response = await axios.get(
-		'http://deayloop.backend.test.starway.agency:8002/api/offers/all/',
+		'http://deayloop.backend.test.starway.agency:8002/api/offers/all/'
 	);
 	return response.data;
 });
 
+ export interface OffersState {
+	offers: Offer[];
+	status: 'idle' | 'loading' | 'succeeded' | 'failed';
+	error: string | null;
+	pending?: boolean;
+}
+
+const initialState: OffersState = {
+	offers: [],
+	status: 'idle',
+	error: null,
+};
+
 const offersSlice = createSlice({
 	name: 'offers',
-	initialState: {
-		offers: [],
-		status: 'idle',
-		error: null,
-	},
+	initialState,
 	reducers: {},
 	extraReducers: (builder) => {
 		builder
@@ -28,7 +38,7 @@ const offersSlice = createSlice({
 			})
 			.addCase(fetchOffers.rejected, (state, action) => {
 				state.status = 'failed';
-				state.error = action.error.message;
+				state.error = action.error.message ?? 'Unknown error';
 			});
 	},
 });
