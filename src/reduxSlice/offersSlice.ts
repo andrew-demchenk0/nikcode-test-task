@@ -1,17 +1,13 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
-
-import { RootState } from 'App/store';
+import {createSlice, createAsyncThunk} from '@reduxjs/toolkit';
+import {RootState} from 'App/store';
 import {Offer} from 'services/offer.types.ts';
+import fetchAllOffers from 'services/offerService.ts';
 
 export const fetchOffers = createAsyncThunk('offers/fetchOffers', async () => {
-	const response = await axios.get(
-		'http://deayloop.backend.test.starway.agency:8002/api/offers/all/'
-	);
-	return response.data;
+	return fetchAllOffers();
 });
 
- export interface OffersState {
+export interface OffersState {
 	offers: Offer[];
 	status: 'idle' | 'loading' | 'succeeded' | 'failed';
 	error: string | null;
